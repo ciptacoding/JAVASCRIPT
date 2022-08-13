@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan Confirm</title>
+  </head>
+  <body>
+    <!-- confirm digunakan untuk memberi input ya atau tidak -->
+    <script>
+      const masuk = confirm("Apakah anda yakin masuk?");
+
+      if (masuk) {
+        const name = prompt("Siapa Nama Anda ?");
+        alert(`Hello ${name}`);
+      } else {
+        alert("Bye Bye");
+      }
+    </script>
+  </body>
+</html>

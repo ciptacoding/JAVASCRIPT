@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan Konversi</title>
+  </head>
+  <body>
+    <!-- koversi ada 4 yaitu parseInt, parseFloat, Number, toString-->
+    <script>
+      let value1 = parseInt("2"); //mengubah string ke int
+      let value2 = 4;
+      let total = value1 + value2;
+      document.writeln(`<p> ${total} </p>`); //6
+
+      document.writeln(`<p> ${parseInt("2")} </p>`); //string ke int
+      document.writeln(`<p> ${parseFloat("3.4")} </p>`); //string ke float
+      document.writeln(`<p> ${Number("9.4")} </p>`); //int maupun float
+
+      const a = 3;
+      const b = 4;
+      const sum = a.toString() + b.toString(); //mengubah dari int ke string
+      document.writeln(`<p> ${sum} </p>`);
+
+      //cara mengecek suatu string itu bisa dirubah ke number adalah dengan menggunakan isNaN checking. contohnya seperti berikut:
+      document.writeln(`<p> ${isNaN("halo")} </p>`); //Not a Number
+      document.writeln(`<p> ${isNaN("100")} </p>`);
+    </script>
+  </body>
+</html>

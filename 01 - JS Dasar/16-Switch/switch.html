@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan Switch</title>
+  </head>
+  <body>
+    <script>
+      const nilai = "A";
+
+      switch (nilai) {
+        case "A":
+          document.writeln("Anda Lulus Dengan Nilai Sempurna");
+          break;
+        case "B":
+        case "C":
+          document.writeln("Anda Lulus");
+          break;
+        case "D":
+          document.writeln("Anda Tidak Lulus");
+          break;
+        default:
+          document.writeln("Mungkin Anda Salah Jurusan");
+      }
+
+      //Konversi menjadi if statement
+      if (nilai === "A") {
+        document.writeln("Anda Lulus dengan nilai sempurna");
+      } else if (nilai === "B" || nilai === "C") {
+        document.writeln("Anda Lulus");
+      } else if (nilai === "D") {
+        document.writeln("Anda Tidak Lulus");
+      } else {
+        document.writeln("Mungkin Anda Salah Jurusan");
+      }
+    </script>
+  </body>
+</html>

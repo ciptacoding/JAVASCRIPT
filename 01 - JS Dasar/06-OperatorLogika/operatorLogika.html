@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan Operator Logika</title>
+  </head>
+  <body>
+    <!-- Operator logika hanya digunakan untuk tipe data boolean saja -->
+    <script>
+      const nilaiUjian = 65;
+      const nilaiAbsensi = 70;
+
+      const lulusUjian = nilaiUjian >= 75; //false
+      const lulusAbsensi = nilaiAbsensi >= 75; //false
+
+      const lulus = lulusUjian && lulusAbsensi; //false
+
+      document.writeln(lulus);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan Null</title>
+  </head>
+  <body>
+    <!-- Perbedaan null dengan undefined= null berarti sebuah vriabel sudah diberikan nilai tetapi nilainya null. sedangkan undefined berarti variabel belum diberikan nilai apapun -->
+    <script>
+      const hello = null;
+
+      if (hello === undefined) {
+        console.info("Variabel Undefined");
+      } else if (hello === null) {
+        console.info("Variabel Null");
+      } else {
+        console.info(hello);
+      }
+    </script>
+  </body>
+</html>

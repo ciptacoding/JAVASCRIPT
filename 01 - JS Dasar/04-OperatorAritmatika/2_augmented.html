@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Augmented Assignment</title>
+  </head>
+  <body>
+    <!-- augmented assignment adalah tata cara penulisan ketika suatu variabel beroperasi terhadap dirinya sendiri.
+    contoh : 
+    result = result + 5
+    ini bsa disingkat menjadi :
+    result += 5
+    -->
+    <script>
+      let hasil = 5 + 8; //13
+      hasil += 6; //13+6=19
+      document.writeln(hasil);
+
+      //contoh lain
+      let result = 3 + 2; //5
+      document.writeln("<p>" + "3 + 2 = " + result + "</p>");
+      let originalResult = result; //5
+
+      result -= 4; //1
+      document.writeln("<p>" + originalResult + " - 4 = " + result + "</p>");
+      originalResult = result; //1
+
+      result *= 10; //10
+      document.writeln("<p>" + originalResult + " * 10 = " + result + "</p>");
+    </script>
+  </body>
+</html>

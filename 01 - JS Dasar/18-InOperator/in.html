@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan In Operator</title>
+  </head>
+  <body>
+    <!-- In operator berfungsi untuk mengecek keberadaan sebuah properti pada object (ada atau tidaknya) -->
+    <script>
+      const people = {
+        firstName: "Cipta",
+        lastName: "Dwipajaya",
+      };
+      // melakukan pengecekan operator In menggunakan if
+      if ("firstName" in people) {
+        alert(`Hello ${people.firstName}`); //memanggil variabel
+      } else {
+        alert("Hello");
+      }
+
+      const person = {
+        firstName: "Toni",
+        middleName: undefined,
+        lastName: "Putra",
+      };
+      if ("middleName" in person) {
+        document.writeln(`<p>Hai ${person.middleName}</p>`);
+      } else {
+        document.writeln("Hai");
+      }
+
+      const star = ["ronaldo", null, "messi"];
+      const result = 1 in star;
+      document.writeln(`GOAT ${result}`);
+    </script>
+  </body>
+</html>

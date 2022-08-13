@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan Object</title>
+  </head>
+  <body>
+    <script>
+      //membuat object langsung
+      const people = {
+        name: "Boglet",
+        age: 18,
+        address: "badung",
+        hobby: "futsal",
+      };
+      console.table(people);
+
+      //membuat object kosong
+      const person = {};
+
+      //mengubah atau menambahkan object
+      person["nama"] = "Cipta Dwipajaya";
+      person["kota asal"] = "Denpasar";
+      person["umur"] = 21;
+      console.table(person);
+
+      // menghapus object
+      delete person["umur"];
+      console.table(person);
+
+      //mengakses kode pada object
+      console.info(`Nama : ${person.nama}`);
+      console.info(`Alamat : ${person["kota asal"]} `); //syntax jika properti lebih dari 1 kata
+    </script>
+  </body>
+</html>

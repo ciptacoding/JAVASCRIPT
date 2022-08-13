@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan Ternary Operator</title>
+  </head>
+  <body>
+    <!-- ternary operator biasa digunakan untuk kasus percabangan sederhana, sehingga kita dapat mempersingkat syntax tanpa menggunakan if else -->
+    <script>
+      // dengan ternary
+      const nilai = 90;
+      const hasil = nilai > 75 ? "Selamat Anda Lulus" : "Silahkan Coba lagi";
+      document.writeln(`<p> ${hasil} </p>`);
+
+      // dengan if else
+      const values = 80;
+      let greeting;
+      if (values > 75) {
+        greeting = "Selamat Anda Lulus";
+      } else {
+        greeting = "Silahkan Coba Lagi";
+      }
+      document.writeln(`<p> ${greeting} </p>`);
+    </script>
+  </body>
+</html>

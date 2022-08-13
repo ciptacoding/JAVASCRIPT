@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan Operasi Array</title>
+  </head>
+  <body>
+    <!--operasi pada array :
+        variabel.push()
+        variabel.length
+        variabel[index]
+        variabel[index] = value
+        delete variabel[index]
+        variabel.join() untuk menggabungkan array ke dalam string-->
+
+    <script>
+      let mobil = []; //array kosong
+
+      mobil.push("Mazda", "Avanza", "Carry", "Terios"); //menambah data
+
+      mobil[1] = "Ferari"; //mengubah nilai
+
+      delete mobil[2]; // delete data
+
+      console.info(mobil[3]); //menampilkan data index ke 3
+
+      mobil.push(["cipta", "dwipa", "jaya"]); //memasukan array ke dalam array (array tiga dimensi)
+
+      console.table(mobil);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan Noolish Coalesing Operator</title>
+  </head>
+  <body>
+    <!-- noolish coalesing bberfungsi untuk mengecek sebuah variabel bernilai null atau undefined -->
+    <script>
+      let parameter;
+
+      let data = parameter;
+      // ?? berarti null atau undefined
+      data = parameter ?? "Nilai Default";
+      document.writeln(`${data}`);
+    </script>
+  </body>
+</html>

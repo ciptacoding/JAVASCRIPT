@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan String Template</title>
+  </head>
+  <body>
+    <script>
+      let name = "I Gusti Ngurah Cipta Dwipajaya";
+      let template = `Nama : ${name}`;
+      //${variabel yang akan dipanggil} jadi tidak perlu menggunakan +
+      console.info(template);
+
+      let firstName = "I Gusti";
+      let middleName = "Ngurah Cipta";
+      let lastName = "Dwipajaya";
+      let nilai = 80;
+      //expression string
+      let fullName = `Name : ${firstName} ${middleName} ${lastName}, Lulus = ${nilai >= 75}`;
+      console.info(fullName);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan Slider Warna</title>
+    <style>
+      .title {
+        text-align: center;
+      }
+      .container {
+        margin: 20px auto;
+        padding: 20px;
+        text-align: center;
+        width: 500px;
+        height: 250px;
+        box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+      }
+      .box-red {
+        background-color: red;
+        height: 50px;
+        width: 50px;
+        margin: 5px auto;
+      }
+      .box-green {
+        background-color: green;
+        height: 50px;
+        width: 50px;
+        margin: 5px auto;
+      }
+      .box-blue {
+        background-color: blue;
+        height: 50px;
+        width: 50px;
+        margin: 5px auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="title">
+      <h1>Slider Warna RGB</h1>
+      <p>Mengunakan Html, Css, Javascript.</p>
+    </div>
+    <div class="container">
+      <div class="box-red"></div>
+      <input type="range" name="sRed" min="0" max="255" />
+      <div class="box-green"></div>
+      <input type="range" name="sGreen" min="0" max="255" />
+      <div class="box-blue"></div>
+      <input type="range" name="sBlue" min="0" max="255" />
+    </div>
+    <script src="slider2.js"></script>
+  </body>
+</html>

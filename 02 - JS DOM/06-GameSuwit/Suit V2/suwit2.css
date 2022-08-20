@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(assets/bg.png);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  height: 500px;
+  background-color: white;
+  position: relative;
+  margin: 0 auto;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+.area-computer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: lightskyblue;
+  padding: 43px;
+  border-radius: 50px 50px 0 0;
+  -webkit-border-radius: 50px 50px 0 0;
+  -moz-border-radius: 50px 50px 0 0;
+  -ms-border-radius: 50px 50px 0 0;
+  -o-border-radius: 50px 50px 0 0;
+}
+
+.area-info {
+  position: absolute;
+  left: 250px;
+  top: 290px;
+  background-color: white;
+  border: 5px solid salmon;
+  width: 200px;
+  height: 75px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  text-align: center;
+  line-height: 65px;
+  font-weight: bold;
+  font-size: 20px;
+  color: salmon;
+}
+
+.area-player {
+  border-radius: 0 0 50px 50px;
+  margin-top: 15px;
+  background-color: lightgreen;
+  padding: 48px;
+  -webkit-border-radius: 0 0 50px 50px;
+  -moz-border-radius: 0 0 50px 50px;
+  -ms-border-radius: 0 0 50px 50px;
+  -o-border-radius: 0 0 50px 50px;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+
+img {
+  width: 150px;
+  cursor: pointer;
+}
+
+img:active {
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+}

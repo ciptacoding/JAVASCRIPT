@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap'); /*import font dari google*/
+
+/* Untuk melakukannya, kita tetapkan elemen <aside> dan #content agar memiliki lebar 100% (memenuhi layar). CSS properti ini akan diterapkan jika ukuran lebar viewport kurang dari 1000px (maksimal 999px).  */
+@media screen and (max-width: 999px) {
+    #content,
+    aside{
+        max-width: 100%;
+        padding: 0px;
+    }
+    
+}
+
+*{
+    box-sizing: border-box; /* agar setiap element mengunakan pengukuran dimensi kotak/box */
+}
+body{ /*font family pada body*/
+    font-family: 'Quicksand', sans-serif;
+    margin: 0; /* default */
+    padding: 0; /* default */
+}
+main{ /* styling pada content */
+    padding: 20px; /* menerapkan nilai padding pada elemen main */
+    overflow: auto; /* agar elemen dianggap oleh induk elemen */
+}
+main p{ /* styling main spesifik ke elemen paragraf */
+    text-align: justify; /* semua elemen p di main rata kanan kiri */
+    text-indent: 1.5em; /* paragraf */
+}
+h2,h3{ /*color pada h2 dan h3*/
+    color:#222; /* warna hitam */
+}
+.title{ /* styling pada class tittle */
+    text-align: center; /* text ditengah */
+    color: white; /* warna text */
+    padding: 60px;
+    background-color: #222;
+    font-size: 20px;   
+}
+header{ /* styling pada elemen header */
+    display: inline; /* agar properti sticky dapat berfungsi */
+}
+nav{ /* styling pada elemen nav */
+    background-color: #3d3d3d; /* warna latar */
+    padding: 5px; /* padding pada nav 5 px */
+    position: sticky; /* agar posisi elemen nav tetap pada browser */
+    top: 0; /* posisi berada diatas */
+}
+nav li{ /* styling pada elemen list */
+    display: inline; /* tampilan list kesamping */
+    list-style-type: none; /* menghilangkan symbol list bulleting */
+    margin-right: 20px; /* jarak antar list ke kanan */
+}
+nav a{ /* styling pada elemen a */
+    color: #ffffff; /* warna text */
+    font-size: 18px; /* ukuran tulisan */
+    font-weight: bold; /* ketebalan */
+    text-decoration: none; /* menghilangkan underline */
+}
+.featured{ /* class semua gambar, kecuali aside */
+    width: 100%; /* lebar gambar 100% */
+    max-height: 300px; /* tinggi maksimal 300 pixel */
+    object-fit: cover; /* meng-crop gambar */
+    object-position: center; /* agar hasil crop tepat berada ditengah */
+}
+.logobandung{ /* styling pada class logo bandung */
+    text-align: center; /* posisi text center */
+}
+.logobdg{ /* styling pada class gambar logobdg */
+    max-width: 200px; /* lebar gambar 200px */
+}
+.card{ /* styling pada kelas card */
+    margin-top: 20px; /* jarak antar elemen luar */
+    padding: 20px; /* jarak anatar elemen dalam */
+    box-shadow: 5px 8px 8px 1px rgba(0, 0, 0, 0.2) ; /*  */
+    border-radius: 5px; /* tingkat rounded sudut border */
+}
+#content{ /* styling pada id content */
+    float: left; /* seluruh id content berada di sebelah kiri */
+    max-width: 75%; /* dengan lebar 75% */
+}
+aside{ /* styling pada elemen aside */
+    float: right; /* seluruh content aside berada di sebelah kanan */
+    width: 25%; /* dengan lebar 25% */
+    padding-left: 20px; /* jarak content aside ke kiri */
+}
+footer{ /* styling pada footer */
+    padding: 20px; /* jarak elemen ke border dalam */
+    background-color:#3d3d3d; /* warna latar */
+    color: #ffffff; /* warna latar putih */
+    text-align: center; /* posisi text ditengah */
+    font-weight: bold; /* ketebalan bold */
+}

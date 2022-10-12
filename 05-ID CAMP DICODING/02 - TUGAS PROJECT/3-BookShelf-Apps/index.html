@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookshelf App</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <h2>Bookshelf App</h2>
+  </header>
+
+  <div class="wrapper">
+
+    <section id="book-search">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="input-group">
+              <input type="text" class="form-control" id="input-search" autocomplete="off" autofocus
+                placeholder="Masukan Judul...">
+              <i class="fas fa-search"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="book-list">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="card">
+              <div class="card-header">
+                <h3>Belum selesai dibaca</h3>
+                <button type="button" class="book-add-btn modal-btn" data-book-action="create">
+                  <i class="fas fa-plus-square"></i> Buku</button>
+              </div>
+              <div class="card-body">
+                <ul class="books" id="unread"></ul>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-header">
+                <h3>Selesai dibaca</h3>
+                <button type="button" class="book-add-btn modal-btn read" data-book-action="create">
+                  <i class="fas fa-plus-square"></i> Buku</button>
+              </div>
+              <div class="card-body">
+                <ul class="books" id="read"></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <div class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1>Form Tambah Buku</h1>
+        <span class="modal-close">&times;</span>
+      </div>
+      <div class="modal-body">
+        <form id="form">
+          <div class="form-group">
+            <label for="title">Judul</label>
+            <input type="text" name="title" id="title" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="author">Penulis</label>
+            <input type="text" name="author" id="author" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="year">Tahun Terbit</label>
+            <input type="number" name="year" id="year" class="form-control" required>
+          </div>
+          <div class="form-group mb-0">
+            <label for="isCompleted" class="mb-0">Selesai dibaca</label>
+            <input type="checkbox" name="isCompleted" id="isCompleted">
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary modal-close-btn">Batal</button>
+        <button type="submit" class="btn btn-primary">Simpan</button>
+      </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/storage.js"></script>
+  <script src="js/jsDom.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

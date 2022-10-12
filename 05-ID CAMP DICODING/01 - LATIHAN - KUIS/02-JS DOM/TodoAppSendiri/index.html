@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Todo List Apps</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- HEADER START -->
+    <header>
+      <h1>My Todo List WebApps</h1>
+    </header>
+    <!-- HEADER END -->
+    <div class="wrapper">
+      <!-- ADD TODO LIST START -->
+      <div class="container shadow" id="add-todo">
+        <h2 class="container-header text-center">Tambah Yang Harus Dilakukan</h2>
+        <form action="#" class="form" id="form">
+          <div class="form-group form-title">
+            <label for="title">Masukan Yang Harus Dilakukan</label>
+            <input type="text" id="title" name="title" required />
+          </div>
+          <div class="form-group form-title">
+            <label for="date">Masukan Yang Harus Dilakukan</label>
+            <input type="date" id="date" name="date" required />
+          </div>
+          <input type="submit" value="Submit" name="Submit" class="btn-submit" />
+        </form>
+      </div>
+      <!-- ADD TODO LIST END -->
+
+      <!-- TODO YANG BELUM DILAKUKAN START -->
+      <div class="container">
+        <h2 class="container-header text-center">Todo Yang Belum Dilakukan</h2>
+        <div class="list-todo" id="todo-notYet"></div>
+      </div>
+      <!-- TODO YANG BELUM DILAKUKAN END -->
+
+      <!-- TODO YANG SUDAH DILAKUKAN START -->
+      <div class="container text-center">
+        <h2 class="container-header">Todo Yang Sudah Dilakukan</h2>
+        <div class="list-todo" id="todo-done"></div>
+      </div>
+      <!-- TODO YANG SUDAH DILAKUKAN END -->
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

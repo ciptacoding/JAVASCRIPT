@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan Session Storage</title>
+    <style>
+      .contents {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 2px solid black;
+        padding: 15px;
+      }
+
+      #generateButton {
+        margin-top: 5px;
+        margin-bottom: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="contents" align="center">
+      <button id="incrementButton">Tambah nilai</button>
+      <button id="clear">Hapus storage</button>
+      <h3>Kamu sudah menekan tombol di atas sebanyak:</h3>
+      <h2 id="count">0</h2>
+    </div>
+
+    <script>
+      // DEKLARASI KEY
+      const sessionStorageKey = "FrekuensiKlik";
+
+      // DEKLARASI DOM
+      const incrementButton = document.getElementById("incrementButton");
+      const clearButton = document.getElementById("clear");
+      const countDisplay = document.getElementById("count");
+
+      // MEMBERI NILAI ITEM DARI SESSION STORAGE
+      countDisplay.innerText = sessionStorage.getItem(sessionStorageKey);
+
+      // MENGUPDATE NILAI KETIKA TOMBOL 'TAMBAH NILAI' DI KLIK
+      incrementButton.addEventListener("click", function () {
+        let count = sessionStorage.getItem(sessionStorageKey);
+        count++;
+        sessionStorage.setItem(sessionStorageKey, count);
+        countDisplay.innerText = sessionStorage.getItem(sessionStorageKey);
+      });
+
+      // MENGHAPUS SESSION STORAGE KETIKA TOMBOL 'CLEAR' DI KLIK
+      clearButton.addEventListener("click", function () {
+        sessionStorage.removeItem(sessionStorageKey);
+        countDisplay.innerText = 0;
+      });
+    </script>
+  </body>
+</html>

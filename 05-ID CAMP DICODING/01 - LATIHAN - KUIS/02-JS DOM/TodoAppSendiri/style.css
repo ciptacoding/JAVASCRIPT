@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Bebas+Neue&family=DynaPuff:wght@400;500;600;700&family=Fira+Code:wght@300;400;500;600;700&family=Mingzat&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200;300;400&family=Pacifico&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Quicksand', sans-serif;
+
+}
+
+header {
+  text-align: center;
+  background-color: tomato;
+  padding: 15px;
+  color: white;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wrapper .container {
+  width: 1024px;
+  background-color: #fefefe;
+  margin: 16px;
+  padding: 16px;
+  border-radius: 8px;
+  flex-grow: 1;
+  height: fit-content;
+}
+
+/* class akan ditambahkan melalui javascript start */
+.itemTodo {
+  border-radius: 16px;
+  margin-top: 16px;
+  padding: 12px 24px 12px 24px;
+  background: white;
+  display: flex;
+  align-items: center;
+}
+
+.itemTodo>.inner h2 {
+  margin-bottom: unset;
+}
+
+.itemTodo>.inner p {
+  margin-top: 5px;
+  /* class akan ditambahkan melalui javascript end */
+}
+
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  height: 300px;
+  border-radius: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 4px;
+  font-size: 18px;
+}
+
+.shadow {
+  box-shadow: 0 5px 10px rgba(154, 160, 185, .05), 0 15px 40px rgba(166, 173, 201, .2);
+}
+
+input[type=text],
+input[type=date] {
+  font-family: 'Quicksand', sans-serif;
+  background-color: #eee;
+  border: 2px solid tomato;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 8px;
+  font-size: 24px;
+  box-sizing: border-box;
+}
+
+.btn-submit {
+  width: fit-content;
+  font-family: Raleway, sans-serif;
+  border-radius: 16px;
+  padding: 12px 24px;
+  border: 2px solid tomato;
+  color: black;
+  font-size: 24px;
+  margin-top: auto;
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+.btn-submit:hover {
+  background: tomato;
+  color: white;
+}
+
+input[type=text],
+input[type=date],
+.btn-submit:focus {
+  outline: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.form-title {
+  margin: auto 0;
+}
+
+.check-button {
+  width: 40px;
+  height: 40px;
+  background: url('../assets/check-outline.svg');
+  background-size: contain;
+  margin-left: auto;
+  cursor: pointer;
+  border: none;
+}
+
+.check-button:hover {
+  background: url('../assets/check-solid.svg');
+  background-size: contain;
+}
+
+.trash-button {
+  width: 40px;
+  height: 40px;
+
+  background: url('../assets/trash-outline.svg');
+  background-size: contain;
+  margin-left: 16px;
+  cursor: pointer;
+  border: none;
+}
+
+.trash-button:hover {
+  background: url('../assets/trash-fill.svg');
+  background-size: contain;
+}
+
+.undo-button {
+  width: 40px;
+  height: 40px;
+
+  background: url('../assets/undo-ouline.svg');
+  background-size: contain;
+  margin-left: auto;
+  cursor: pointer;
+  border: none;
+}
+
+.undo-button:hover {
+  background: url('../assets/undo-ouline.svg');
+  background-size: contain;
+}
+
+.check-button:focus,
+.trash-button {
+  outline: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  .wrapper {
+    margin: 0;
+  }
+
+  .wrapper .container {
+    width: 100%;
+  }
+
+  .list-todo {
+    width: 90%;
+  }
+
+  .form {
+    width: 100%;
+  }
+}
